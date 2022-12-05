@@ -1,15 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 제이쿼리 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js defer"></script>
+
+    <!-- 풀페이지 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
     <title>Document</title>
 </head>
+
 <body>
-    안녕
+    <article>
+        <div class="line">
+            <div class="line-tab line-tab-1" data-menuanchor="section-1">
+                <a href="#section-1">Web</a>
+            </div>
+            <div class="line-tab line-tab-2" data-menuanchor="section-2">
+                <a href="#section-2">Editorial</a>
+            </div>
+            <div class="line-tab line-tab-3" data-menuanchor="section-3">
+                <a href="#section-3">Logo</a>
+            </div>
+            <div class="line-tab line-tab-4" data-menuanchor="section-4">
+                <a href="#section-4">Poster</a>
+            </div>
+            <div class="line-tab line-tab-5" data-menuanchor="section-5">
+                <a href="#section-5">ETC.</a>
+            </div>
+            <div class="line-tab line-tab-6" data-menuanchor="section-6">
+                <a href="#section-6">Contact Me</a>
+            </div>
+        </div>
+
+        <div class="site-wrap">
+            <div id="fullpage">
+                <section class="section" data-anchor="section-1">
+                    <div class="section-inner">
+                        
+                    </div>
+                </section>
+                <section class="section" data-anchor="section-2">섹션 2</section>
+                <section class="section" data-anchor="section-3">섹션 3</section>
+                <section class="section" data-anchor="section-4">섹션 4</section>
+                <section class="section" data-anchor="section-5">섹션 5</section>
+                <section class="section" data-anchor="section-6">섹션 6</section>
+            </div>
+        </div>
+    </article>
 </body>
+
 </html>

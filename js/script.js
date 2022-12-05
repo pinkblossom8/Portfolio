@@ -1,0 +1,3 @@
+$("#fullpage").fullpage({
+  menu: ".line"
+});
