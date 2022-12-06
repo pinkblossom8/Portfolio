@@ -23,6 +23,7 @@ a {
 /* 라이브러리 */
 .con {
     max-width: 1200px;
+    margin:0 auto;
 }
 
 /* 폰트 */
@@ -35,7 +36,6 @@ body {
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size:10vw;
   }
   
   
@@ -99,15 +99,55 @@ body {
   
 
   /* section */
-.section-inner .logo {
-  border:3px solid red;
-}
-
-#fullpage > .section > div > .page-1 {
-    border: 3px solid red;
-    background-image: url(../img/background-img.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    /* background-size: s100% 100%; */
-    height: 100%;
+  #tsparticles {
+    width:100vw;
+    height: 100vh;
+    position:absolute;
+    z-index: -1;
   }
+  
+    header {
+      border:3px solid green;
+      position:fixed;
+      top:0;
+      left: 0;
+      z-index: 999;
+    }
+  
+    header .logo > img {
+      opacity: 0;
+    }
+  
+    header .logo > img:nth-child(2) {
+      /* border:3px solid pink; */
+      position:absolute;
+      top:0;
+      left:0;
+    }
+  
+  
+    .fp-viewing-section-1 header .logo > img:first-child,
+    .fp-viewing-section-6 header .logo > img:first-child {
+      opacity: 1;
+    }
+  
+    .fp-viewing-section-2 header .logo > img:nth-child(2),
+    .fp-viewing-section-3 header .logo > img:nth-child(2),
+    .fp-viewing-section-4 header .logo > img:nth-child(2),
+    .fp-viewing-section-5 header .logo > img:nth-child(2) {
+      opacity:1;
+    }
+  
+    #fullpage .page-1 .title-main {
+      border:3px solid blue;
+      margin-top:-80px;
+      text-align: center;
+    }
+  
+    #fullpage .page-1 .text-main {
+      border:3px solid red;
+      margin:0;
+      padding:0;
+    }
+
+    /* 수정 */

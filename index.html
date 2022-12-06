@@ -13,6 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/2.5.3/tsparticles.bundle.min.js"></script>
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/script.js" defer></script>
     <title>Document</title>
@@ -22,34 +23,43 @@
     <article>
         <div class="line">
             <div class="line-tab line-tab-1" data-menuanchor="section-1">
-                <a href="#section-1">Web</a>
+                <a href="#section-1">HOME</a>
             </div>
             <div class="line-tab line-tab-2" data-menuanchor="section-2">
-                <a href="#section-2">Editorial</a>
+                <a href="#section-2">ABOUT ME</a>
             </div>
             <div class="line-tab line-tab-3" data-menuanchor="section-3">
-                <a href="#section-3">Logo</a>
+                <a href="#section-3">PORTFOLIO</a>
             </div>
             <div class="line-tab line-tab-4" data-menuanchor="section-4">
-                <a href="#section-4">Poster</a>
+                <a href="#section-4">CLONE CODING</a>
             </div>
             <div class="line-tab line-tab-5" data-menuanchor="section-5">
-                <a href="#section-5">ETC.</a>
+                <a href="#section-5">CONTACT ME</a>
             </div>
             <div class="line-tab line-tab-6" data-menuanchor="section-6">
                 <a href="#section-6">Contact Me</a>
             </div>
         </div>
-        
+
+        <!-- 수정 -->
+        <header>
+            <div class="logo">
+                <img src="./img/logo-1.png" alt="">
+                <img src="./img/logo-2.png" alt="">
+            </div>
+        </header>
         <div class="site-wrap">
             <div id="fullpage">
                 <section class="section page-1" data-anchor="section-1">
-                    <div class="section-inner con">
-                        <header>
-                            <div class="logo">
-                                <img src="./img/logo-1.png" alt="">
-                            </div>
-                        </header>
+                    <div id="tsparticles"></div>
+                    <div class="section-inner">
+                        <div class="title-main">
+                            <img src="./img/title-main.png" alt="">
+                        </div>
+                        <div class="text-main">
+                            <img src="./img/text-main.png" alt="">
+                        </div>
                     </div>
                 </section>
                 <section class="section" data-anchor="section-2">섹션 2</section>
