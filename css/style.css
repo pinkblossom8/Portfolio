@@ -32,13 +32,7 @@ body {
 }
 
 /* 커스텀 */
-  #fullpage > .section > div {
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  }
-  
-  
+
   .line {
     position:fixed;
     width:1px;
@@ -99,6 +93,13 @@ body {
   
 
   /* section */
+
+  #fullpage > .section > div {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  
   #tsparticles {
     width:100vw;
     height: 100vh;
@@ -125,7 +126,7 @@ body {
       left:0;
     }
   
-  
+  /* 로고 색상 페이지 변경 */
     .fp-viewing-section-1 header .logo > img:first-child,
     .fp-viewing-section-6 header .logo > img:first-child {
       opacity: 1;
@@ -140,14 +141,105 @@ body {
   
     #fullpage .page-1 .title-main {
       border:3px solid blue;
-      margin-top:-80px;
+      margin-top:-68px;
       text-align: center;
     }
   
     #fullpage .page-1 .text-main {
       border:3px solid red;
-      margin:0;
-      padding:0;
+      margin-top:80px;
     }
 
-    /* 수정 */
+    #fullpage .page-1 .remark {
+      border: 3px solid pink;
+      margin-top: 40px;
+      position: absolute;
+      bottom: 40px;
+      left: 10%;
+    }
+
+/* 마우스 애니메이션 */
+
+#mouse-scroll {
+  style: block;
+}
+#mouse-scroll {
+  position: fixed;
+  margin: auto;
+  left: 50%;
+  top: 760px;
+  -webkit-transform: translateX(-50%);
+  z-index: 9999;
+}
+#mouse-scroll span{
+  display: block;
+  width: 5px; 
+  height: 5px;
+  -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+       transform: rotate(45deg);
+       transform: rotate(45deg);
+  border-right: 2px solid #fff; 
+  border-bottom: 2px solid #fff;
+  margin: 0 0 3px 5px;
+}
+#mouse-scroll .mouse {
+  height: 36px;
+  width: 24px;
+  border-radius: 15px;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  border: 2px solid #333333;
+  top: 170px;
+}
+
+#mouse-scroll .mouse-in {
+  height: 5px;
+  width: 2px;
+  display: block; 
+  margin: 5px auto;
+  background: #333333;
+  position: relative;
+}
+#mouse-scroll .mouse-in {
+ -webkit-animation: animated-mouse 1.2s ease infinite;
+  moz-animation: mouse-animated 1.2s ease infinite;
+}
+
+@-webkit-keyframes animated-mouse {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+     opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+@-webkit-keyframes mouse-scroll {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  } 
+}
+@keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
