@@ -2,97 +2,148 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 제이쿼리 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 제이쿼리 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <!-- 풀페이지 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css">
+  <!-- 풀페이지 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/2.5.3/tsparticles.bundle.min.js"></script>
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/script.js" defer></script>
-    <title>Document</title>
+  <!-- 테일윈드
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" /> -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/2.5.3/tsparticles.bundle.min.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js" defer></script>
+  <title>Document</title>
 </head>
 
 <body>
-    <article>
-        <div class="line">
-            <div class="line-tab line-tab-1" data-menuanchor="section-1">
-                <a href="#section-1">HOME</a>
-            </div>
-            <div class="line-tab line-tab-2" data-menuanchor="section-2">
-                <a href="#section-2">ABOUT ME</a>
-            </div>
-            <div class="line-tab line-tab-3" data-menuanchor="section-3">
-                <a href="#section-3">PORTFOLIO</a>
-            </div>
-            <div class="line-tab line-tab-4" data-menuanchor="section-4">
-                <a href="#section-4">CLONE CODING</a>
-            </div>
-            <div class="line-tab line-tab-5" data-menuanchor="section-5">
-                <a href="#section-5">CONTACT ME</a>
-            </div>
-            <div class="line-tab line-tab-6" data-menuanchor="section-6">
-                <a href="#section-6">Contact Me</a>
-            </div>
-        </div>
+  <article>
+    <div class="line">
+      <div class="line-tab line-tab-1" data-menuanchor="section-1">
+        <a href="#section-1">HOME</a>
+      </div>
+      <div class="line-tab line-tab-2" data-menuanchor="section-2">
+        <a href="#section-2">ABOUT ME</a>
+      </div>
+      <div class="line-tab line-tab-3" data-menuanchor="section-3">
+        <a href="#section-3">PORTFOLIO</a>
+      </div>
+      <div class="line-tab line-tab-4" data-menuanchor="section-4">
+        <a href="#section-4">CLONE CODING</a>
+      </div>
+      <div class="line-tab line-tab-5" data-menuanchor="section-5">
+        <a href="#section-5">CONTACT ME</a>
+      </div>
+      <div class="line-tab line-tab-6" data-menuanchor="section-6">
+        <a href="#section-6">Contact Me</a>
+      </div>
+    </div>
 
 
-        <header>
-            <div class="logo">
-                <img src="./img/logo-1.png" alt="">
-                <img src="./img/logo-2.png" alt="">
+    <header>
+      <div class="logo">
+        <img src="./img/logo-1.png" alt="">
+        <img src="./img/logo-2.png" alt="">
+      </div>
+    </header>
+    <div></div>
+    <div class="site-wrap">
+      <div id="fullpage">
+        <section class="section page-1" data-anchor="section-1">
+          <div id="tsparticles"></div>
+          <div class="section-inner">
+            <div class="title-main">
+              <img src="./img/title-main.png" alt="">
             </div>
-        </header>
-        <div></div>
-        <div class="site-wrap">
-            <div id="fullpage">
-                <section class="section page-1" data-anchor="section-1">
-                    <div id="tsparticles"></div>
-                    <div class="section-inner">
-                        <div class="title-main">
-                            <img src="./img/title-main.png" alt="">
-                        </div>
-                        <div class="text-main">
-                            <img src="./img/text-main.png" alt="">
-                        </div>
-                        <div id="mouse-scroll">
-                            <div class="mouse">
-                                <div class="mouse-in"></div>
-                            </div>
-                        </div>
-                        <div class="remark">
-                            <img src="./img/remark.png" alt="">
-                        </div>
-                    </div>
-                </section>
-                <section class="section page-2" data-anchor="section-2">
-                    <div class="section-inner">
-                        <div class="sub-title">
-                            <span>About Me</span>
-                        </div>
-                        <div class="comment-box">
-                            <img src="./img/code-icon.png" alt="">
-                            <div class="comment">
-                                <span>저는 퍼블리싱을 하면서 디자인도 이해할 수 있는,</span>
-                                <span>누구나 직관적으로 쉽게 사용할 수 있도록 하는</span>
-                                <span>웹퍼블리셔입니다.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="section" data-anchor="section-3">섹션 3</section>
-                <section class="section" data-anchor="section-4">섹션 4</section>
-                <section class="section" data-anchor="section-5">섹션 5</section>
-                <section class="section" data-anchor="section-6">섹션 6</section>
+            <div class="text-main">
+              <img src="./img/text-main.png" alt="">
             </div>
-        </div>
-    </article>
+            <div id="mouse-scroll">
+              <div class="mouse">
+                <div class="mouse-in"></div>
+              </div>
+            </div>
+            <div class="remark">
+              <img src="./img/remark.png" alt="">
+            </div>
+          </div>
+        </section>
+        <section class="section page-2" data-anchor="section-2">
+          <div class="section-inner">
+            <div class="sub-title">
+              <img src="./img/title-about me.png" alt="">
+            </div>
+            <div class="comment-box">
+              <img src="./img/code-icon.png" alt="">
+              <div class="comment">
+                <span>저는 <div class="half-highlight">퍼블리싱</div>을 하면서 <div class="half-highlight">디자인도 이해</div>할 수
+                  있는,</span>
+                <span>누구나 <div class="half-highlight">직관적으로 쉽게 사용</div>할 수 있도록 하는</span>
+                <span>웹퍼블리셔입니다.</span>
+              </div>
+            </div>
+            <div class="profile-box con">
+              <div class="item-1">
+                <div class="profile">
+                  <h2>Profile</h2>
+                  <ul>
+                    <li><span>name</span></li>
+                    <li><span>phone</span></li>
+                    <li><span>mail</span></li>
+                  </ul>
+                  <ul>
+                    <li><span>박선아 (Park Sun A)</span></li>
+                    <li><span>010-6284-2506</span></li>
+                    <li><span>samail0312@hanmail.net</span></li>
+                  </ul>
+                </div>
+                <div class="edu">
+                  <h2>Education</h2>
+                  <ul>
+                    <li>UX/UI 웹퍼블리셔/웹디자인 과정</li>
+                  </ul>
+                </div>
+                <div class="certify">
+                  <h2>Certificate</h2>
+                  <ul>
+                    <li><span class="y-2022">2022</span></li>
+                    <li><span>2020</span></li>
+                    <li><span>2019</span></li>
+                    <li><span>2018</span></li>
+                  </ul>
+                  <ul>
+                    <li class="list-2022">
+                      <span>ACP Photoshop</span>
+                      <span>ACP Illustrator</span>
+                      <span>웹디자인기능사 필기</span>
+                    </li>
+                    <li><span>전산회계 2급</span></li>
+                    <li><span>한국사능력검정시험 1급</span></li>
+                    <li><span>컴퓨터활용능력 2급</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="item-2">
+                <div class="skill">
+                  <h2>Skills</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section" data-anchor="section-3">섹션 3</section>
+        <section class="section" data-anchor="section-4">섹션 4</section>
+        <section class="section" data-anchor="section-5">섹션 5</section>
+        <section class="section" data-anchor="section-6">섹션 6</section>
+      </div>
+    </div>
+  </article>
 </body>
 
 </html>

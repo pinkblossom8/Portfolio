@@ -179,6 +179,7 @@ header .logo>img:nth-child(2) {
 #fullpage .page-1 img {
   max-width: 100%;
   height: auto;
+  /* border:3px solid yellow; */
 }
 
 #fullpage .page-1 .text-main {
@@ -307,18 +308,74 @@ header .logo>img:nth-child(2) {
 }
 
 #fullpage .page-2 .sub-title {
-  border: 3px solid blue;
+  /* border: 3px solid blue; */
+  margin-top: 96px;
   text-align: center;
-  font-weight: 900;
-  font-size: 3.6rem;
-  color: #242426;
-  margin-top: 135px;
 }
 
 #fullpage .page-2 .comment-box {
-  border: 3px solid red;
+  /* border: 3px solid red; */
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  margin-top:40px;
+}
+
+#fullpage .page-2 .comment > span {
+  /* border:3px solid green; */
+  display: block;
+  margin-left: 24px;
+  font-family: 'Cafe24Shiningstar';
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+.page-2 .comment .half-highlight {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #F2ECBB 50%);
+  display: inline-block;
+}
+
+#fullpage .profile-box {
+  border:3px solid blue;
+  margin-top:40px;
+}
+
+#fullpage .profile-box > div {
+  border:3px solid red;
+  display: flex;
+  justify-content: center;
+  margin-top:40px;
+}
+
+.profile-box .item-1 > div {
+  border:3px solid green;
+}
+
+.profile-box h2 {
+  border:3px solid black;
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: #242426;
+}
+
+.profile-box .item-1 {
+}
+
+.profile-box .item-1 ul {
+  border:3px solid gold;
+  font-family: 'Cafe24Shiningstar';
+  font-size: 2.8rem;
+  display: inline-block;
+}
+
+.item-1 .certify > ul {
+  border:3px solid orange;
+}
+
+.item-1 .certify .list-2022 > span {
+  border:3px solid pink;
+  display: block;
+}
+t: 240px;
 }
 
