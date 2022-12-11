@@ -307,9 +307,9 @@ header .logo>img:nth-child(2) {
   display: flex;
 }
 
-#fullpage .page-2 .sub-title {
+#fullpage .sub-title {
   /* border: 3px solid blue; */
-  margin-top: 96px;
+  margin-top: 80px;
   text-align: center;
 }
 
@@ -408,10 +408,17 @@ header .logo>img:nth-child(2) {
   border: 3px solid pink;
 }
 
+.page-2 .item-2 .chart > div {
+  border:3px solid red;
+  display: inline-block;
+  margin:0 40px;
+}
+
 .circle {
   position:relative;
   display:inline-block;
 }
+
 .circle .percent {
   position:absolute;
   top:45%;
@@ -420,3 +427,18 @@ header .logo>img:nth-child(2) {
   font-weight:bold;
   font-size:20px;
 }
+
+.page-2 .btn-move {
+  border:3px solid yellow;
+  width: 1200px;
+  margin:0 auto;
+  text-align: right;
+  margin-top: 24px;
+}
+
+/* section-3 시작 */
+
+#fullpage .page-3 {
+  display: flex;
+}
+
