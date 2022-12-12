@@ -476,3 +476,73 @@ header .logo>img:nth-child(2) {
   height: 600px;
   border:8px solid #008D99;
 }
+
+.slider-box-1 .swiper .swiper-slide {
+  display: flex;
+  /* border:3px solid pink; */
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-box-1 .swiper .slide__item {
+  /* border:3px solid blue; */
+  margin:1vw;
+}
+
+.slider-box-1 .swiper .slide__item:first-child>img {
+  max-width: 100%;
+  height: auto;
+}
+
+.slider-box-1 .slide__item .slide__info{
+  /* border:3px solid red; */
+  margin-bottom: 68px;
+}
+
+.slider-box-1 .slide__info:first-child > span {
+  /* border:2px solid yellow; */
+  display: block;
+  text-align: center;
+}
+
+.slider-box-1 .slide__info:first-child > span:first-child {
+  font-size: 3.6rem;
+  font-weight: 900;
+  color:#008D99;
+  margin-bottom: 24px;
+}
+
+.slider-box-1 .slide__info:first-child > span:last-child {
+  font-family: 'Cafe24Shiningstar';
+  font-size: 2.4rem;
+  color:#333333;
+}
+
+.slider-box-1 .slide__info > ul {
+  /* border:2px solid pink; */
+  display: flex;
+}
+
+.slider-box-1 .slide__info > ul > li {
+  margin-right: 24px;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.slider-box-1 .slide__info > ul > li:first-child {
+  color: #242426;
+  min-width: 80px;
+}
+
+.slider-box-1 .slide__info > ul > li:last-child {
+  color:#444444;
+  min-width: 324px;
+}
+
+
+.slider-box-1 .slide__info > ul > li > span {
+  /* border:3px solid green; */
+  display: block;
+  margin-bottom: 24px;
+}
+
