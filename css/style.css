@@ -336,18 +336,18 @@ header .logo>img:nth-child(2) {
 }
 
 #fullpage .profile-box {
-  border:3px solid blue;
+  /* border:3px solid blue; */
   margin-top:20px;
 }
 
 #fullpage .profile-box .item-1 {
-  border:3px solid red;
+  /* border:3px solid red; */
   display: flex;
   justify-content: space-between;
 }
 
 .profile-box .item-1 .text-box {
-  border:3px solid green;
+  /* border:3px solid green; */
   min-width: 250px;
 }
 .profile-box .item-1 ul {
@@ -360,7 +360,7 @@ header .logo>img:nth-child(2) {
 }
 
 .profile-box h2 {
-  border:3px solid black;
+  /* border:3px solid black; */
   font-size: 2.4rem;
   font-weight: 900;
   color: #242426;
@@ -405,11 +405,15 @@ header .logo>img:nth-child(2) {
 
 .page-2 .item-2 .skill {
   text-align: center;
-  border: 3px solid pink;
+  /* border: 3px solid pink; */
+}
+
+.page-2 .item-2 .chart {
+  min-width: 1200px;
 }
 
 .page-2 .item-2 .chart > div {
-  border:3px solid red;
+  /* border:3px solid red; */
   display: inline-block;
   margin:0 40px;
 }
@@ -429,12 +433,27 @@ header .logo>img:nth-child(2) {
 }
 
 .page-2 .btn-move {
-  border:3px solid yellow;
+  /* border:3px solid yellow; */
   width: 1200px;
   margin:0 auto;
   text-align: right;
   margin-top: 24px;
+  position: relative;
 }
+
+.page-2 .btn-move a:last-child {
+  position: absolute;
+  top:0;
+  right: 0;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.page-2 .btn-move a:last-child:hover {
+  opacity: 1;
+}
+
+
 
 /* section-3 시작 */
 
@@ -442,3 +461,18 @@ header .logo>img:nth-child(2) {
   display: flex;
 }
 
+#fullpage .page-3 .portfolio__title {
+  /* border:3px solid red; */
+  width:1200px;
+  margin:0 auto;
+  margin-top:40px;
+  font-size: 3.6rem;
+  font-family: 'Cafe24Shiningstar';
+  color:#008D99;
+}
+
+.page-3 .slider-box-1 .swiper {
+  max-width: 1200px;
+  height: 600px;
+  border:8px solid #008D99;
+}
