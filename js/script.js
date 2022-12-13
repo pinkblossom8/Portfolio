@@ -1,29 +1,29 @@
-function Particles__init(){
+function Particles__init() {
   $("#fullpage").fullpage({
     menu: ".line"
   });
-  
+
   // 더 많은 옵션은 https://particles.js.org/ 참고
-  
+
   tsParticles.load("tsparticles", {
     // 전체 화면 여부
     fullScreen: {
       enable: false,
       // zIndex: -1
     },
-    
+
     // 배경 관련 옵션
     background: {
       // 색상
       // color: "#000",
-      
+
       // 이미지
       image: "url('../img/background-img.png')",
       size: "cover",
       position: "50% 50%",
-      repeat:"no-repeat"
+      repeat: "no-repeat"
     },
-    
+
     // 배경 마스크 여부
     // backgroundMask: {
     //   enable: true,
@@ -35,7 +35,7 @@ function Particles__init(){
     //     }
     //   }
     // },
-    
+
     // 인터렉션 관련 옵션
     interactivity: {
       events: {
@@ -60,10 +60,10 @@ function Particles__init(){
         // }
       }
     },
-  
+
     // particles = 입자 관련 옵션
     // 아래 particle 옵션 중 원하는 한 가지만! 적용
-    
+
     // 기본 애니메이션
     particles: {
       color: {
@@ -72,7 +72,7 @@ function Particles__init(){
       shape: {
         type: ["circle", "star"] // heart, star도 가능
       },
-  
+
       // 개수
       number: {
         value: 40,
@@ -82,95 +82,108 @@ function Particles__init(){
           value_area: 1000
         }
       },
-      
+
       // 움직임 여부
       move: {
         enable: true,
-        speed: { min: 1, max: 3 }
+        speed: {
+          min: 1,
+          max: 3
+        }
       },
-      
+
       // 투명도
       opacity: {
-        value: { min: 0.1, max: 1 }
+        value: {
+          min: 0.1,
+          max: 1
+        }
       },
-      
+
       // 사이즈
       size: {
-        value: { min: 2, max: 3 }
+        value: {
+          min: 2,
+          max: 3
+        }
       },
-      
-  
+
+
     },
-  
-    
+
+
   });
 }
 
 
-function Chart__init(){
+function Chart__init() {
   let chart1AllowRerender = false;
 
-// 건들지 마세요
-let chart1Rendered = false;
+  // 건들지 마세요
+  let chart1Rendered = false;
 
-$("#fullpage").fullpage({
-  
-  
-    afterLoad: function(ignored, destination){
+  $("#fullpage").fullpage({
+
+
+    afterLoad: function (ignored, destination) {
       // 애니메이션이 재생되길 원하는 data anchor의 위치 입력
-      if ( destination.anchor == 'section-2' ) {
-        if ( chart1AllowRerender ) {
+      if (destination.anchor == 'section-2') {
+        if (chart1AllowRerender) {
           // circle 차트 클래스명 확인 및 변경을 원하는 수치 입력
-          $(".circle").circleProgress({value: 0.9});
-        }
-        else {
-          if ( chart1Rendered == false ) {
+          $(".circle").circleProgress({
+            value: 0.9
+          });
+        } else {
+          if (chart1Rendered == false) {
             // circle 차트 클래스명 확인 및 변경을 원하는 수치 입력
-            $(".circle").circleProgress({value: 0.9});
+            $(".circle").circleProgress({
+              value: 0.9
+            });
             chart1Rendered = true;
           }
         }
-      }
-      else {
-        if ( chart1AllowRerender ) {
+      } else {
+        if (chart1AllowRerender) {
           // circle 차트 클래스명 확인
-          $(".circle").circleProgress({value: 0});
+          $(".circle").circleProgress({
+            value: 0
+          });
         }
       }
     },
-  
-});
 
-
-
-// circle 커스텀 value를 0으로 설정해야 합니다!
-$(".circle")
-  .circleProgress({
-    // 그래프 시작 위치
-    // Math.PI = 3.14
-    startAngle: -Math.PI / 2,
-    // 방향 반전 여부
-    reverse: true,
-    // 그래프 수치
-    value: 0,
-    // 그래프 사이즈
-    size: 150,
-    // 그래프 모서리, 지울 시 각진 모양
-    lineCap: "round",
-    // 그래프 두께
-    thickness: 20,
-    // 그래프 색상
-    fill: {
-      gradient: ["red", "orange"]
-    }
-  })
-
-  // 그래프 수치 출력
-  .on("circle-animation-progress", function (event, progress, stepValue) {
-    $(this)
-      .find(".percent")
-      .text(parseInt(stepValue * 100) + "%");
   });
+
+
+
+  // circle 커스텀 value를 0으로 설정해야 합니다!
+  $(".circle")
+    .circleProgress({
+      // 그래프 시작 위치
+      // Math.PI = 3.14
+      startAngle: -Math.PI / 2,
+      // 방향 반전 여부
+      reverse: true,
+      // 그래프 수치
+      value: 0,
+      // 그래프 사이즈
+      size: 150,
+      // 그래프 모서리, 지울 시 각진 모양
+      lineCap: "round",
+      // 그래프 두께
+      thickness: 20,
+      // 그래프 색상
+      fill: {
+        gradient: ["red", "orange"]
+      }
+    })
+
+    // 그래프 수치 출력
+    .on("circle-animation-progress", function (event, progress, stepValue) {
+      $(this)
+        .find(".percent")
+        .text(parseInt(stepValue * 100) + "%");
+    });
 }
 
 
@@ -210,11 +223,35 @@ function SliderBox2__init() {
   });
 }
 
+function SliderBox3__init() {
+  const swiper = new Swiper(".slider-box-3 .swiper", {
+    // Optional parameters
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: ".slider-box-3 .swiper-pagination"
+    },
+
+    breakpoints: {
+
+      // 화면의 넓이 >= 480px
+      480: {
+        slidesPerView: 1,
+      },
+      // 화면의 넓이 >= 640px
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 10
+      }
+    }
+  });
+}
+
+
 
 Particles__init();
 Chart__init();
 SliderBox1__init();
 SliderBox2__init();
-
-
-
+SliderBox3__init();
