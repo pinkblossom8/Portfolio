@@ -1,7 +1,9 @@
-function Particles__init() {
-  $("#fullpage").fullpage({
-    menu: ".line"
-  });
+  // $("#fullpage").fullpage({
+  //   menu: ".line"
+  // });
+  
+  function Particles__init() {
+
 
   // 더 많은 옵션은 https://particles.js.org/ 참고
 
@@ -124,7 +126,7 @@ let chart1Rendered = false;
 
 $("#fullpage").fullpage({
   
-  
+    menu: ".line",
     afterLoad: function(ignored, destination){
       // 애니메이션이 재생되길 원하는 data anchor의 위치 입력
       if ( destination.anchor == 'section-2' ) {
