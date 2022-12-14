@@ -328,6 +328,7 @@ header .logo>img:nth-child(2) {
   font-family: 'Cafe24Shiningstar';
   font-size: 2.8rem;
   text-align: center;
+  color:#242426;
 }
 
 .page-2 .comment .half-highlight {
@@ -634,6 +635,7 @@ header .logo>img:nth-child(2) {
 
 #fullpage .page-5 {
   display: flex;
+  background: url(../img/bg-page5.png) no-repeat center center;
 }
 
 .slider-box-3 {
@@ -641,7 +643,7 @@ header .logo>img:nth-child(2) {
 }
 
 .slider-box-3 .swiper {
-  height:600px;
+  height:648px;
 }
 
 .slider-box-3 .slide__item-box {
@@ -664,4 +666,31 @@ header .logo>img:nth-child(2) {
 .slider-box-3 .slide__item-box .img-box > img {
   height: auto;
   max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 0 6px 2px rgba(68, 68, 68, 0.3);
+}.slider-box-1 .swiper-horizontal > .swiper-scrollbar {
+  height:1px;
+  left:0;
+  bottom:0;
+  width:100%;
+}
+
+/* 불릿커스텀 */
+
+.slider-box-3 .swiper-pagination-bullet {
+  width:12px;
+  height: 12px;
+  border:1px solid #008D99;
+  opacity: 1;
+  border-radius: 0;
+  background: transparent;
+}
+
+.slider-box-3 .swiper-pagination-bullet-active {
+  width:24px;
+  height: 12px;
+  transition: 0.3s;
+  border-radius: 0px;
+  background-color: #008D99;
+  border: 1px solid #008D99;
 }

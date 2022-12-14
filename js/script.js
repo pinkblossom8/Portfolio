@@ -236,11 +236,11 @@ function SliderBox3__init() {
     breakpoints: {
 
       // 화면의 넓이 >= 480px
-      480: {
+      768: {
         slidesPerView: 1,
       },
       // 화면의 넓이 >= 640px
-      640: {
+      769: {
         slidesPerView: 2,
         spaceBetween: 10
       }
