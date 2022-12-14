@@ -236,7 +236,7 @@ function SliderBox3__init() {
     breakpoints: {
 
       // 화면의 넓이 >= 480px
-      768: {
+      4768: {
         slidesPerView: 1,
       },
       // 화면의 넓이 >= 640px
