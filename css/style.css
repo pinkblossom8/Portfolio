@@ -347,6 +347,15 @@ header .logo>img:nth-child(2) {
   justify-content: space-between;
 }
 
+/* 미디어쿼리 확인하기! */
+
+@media (max-width:768px) {
+  #fullpage .profile-box .item-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .profile-box .item-1 .text-box {
   /* border:3px solid green; */
   min-width: 250px;
@@ -422,17 +431,17 @@ header .logo>img:nth-child(2) {
 }
 
 .circle {
-  position: relative;
-  display: inline-block;
+  position:relative;
+  display:inline-block;
 }
 
 .circle .percent {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-weight: bold;
-  font-size: 20px;
+  position:absolute;
+  top:45%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  font-weight:bold;
+  font-size:20px;
 }
 
 .btn-move {

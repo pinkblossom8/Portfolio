@@ -119,71 +119,68 @@ function Particles__init() {
 function Chart__init() {
   let chart1AllowRerender = false;
 
-  // 건들지 마세요
-  let chart1Rendered = false;
+// 건들지 마세요
+let chart1Rendered = false;
 
-  $("#fullpage").fullpage({
-
-
-    afterLoad: function (ignored, destination) {
+$("#fullpage").fullpage({
+  
+  
+    afterLoad: function(ignored, destination){
       // 애니메이션이 재생되길 원하는 data anchor의 위치 입력
-      if (destination.anchor == 'section-2') {
-        if (chart1AllowRerender) {
+      if ( destination.anchor == 'section-2' ) {
+        if ( chart1AllowRerender ) {
           // circle 차트 클래스명 확인 및 변경을 원하는 수치 입력
-          $(".circle").circleProgress({
-            value: 0.9
-          });
-        } else {
-          if (chart1Rendered == false) {
+          $(".circle").circleProgress({value: 0.9});
+        }
+        else {
+          if ( chart1Rendered == false ) {
             // circle 차트 클래스명 확인 및 변경을 원하는 수치 입력
-            $(".circle").circleProgress({
-              value: 0.9
-            });
+            $(".circle").circleProgress({value: 0.9});
             chart1Rendered = true;
           }
         }
-      } else {
-        if (chart1AllowRerender) {
+      }
+      else {
+        if ( chart1AllowRerender ) {
           // circle 차트 클래스명 확인
-          $(".circle").circleProgress({
-            value: 0
-          });
+          $(".circle").circleProgress({value: 0});
         }
       }
     },
+  
+});
 
+
+
+// circle 커스텀 value를 0으로 설정해야 합니다!
+$(".circle")
+  .circleProgress({
+    // 그래프 시작 위치
+    // Math.PI = 3.14
+    startAngle: -Math.PI / 2,
+    // 방향 반전 여부
+    reverse: true,
+    // 그래프 수치
+    value: 0,
+    // 그래프 사이즈
+    size: 150,
+    // 그래프 모서리, 지울 시 각진 모양
+    lineCap: "round",
+    // 그래프 두께
+    thickness: 20,
+    // 그래프 색상
+    fill: {
+      gradient: ["red", "orange"]
+    }
+  })
+
+  // 그래프 수치 출력
+  .on("circle-animation-progress", function (event, progress, stepValue) {
+    $(this)
+      .find(".percent")
+      .text(parseInt(stepValue * 100) + "%");
   });
 
-
-
-  // circle 커스텀 value를 0으로 설정해야 합니다!
-  $(".circle")
-    .circleProgress({
-      // 그래프 시작 위치
-      // Math.PI = 3.14
-      startAngle: -Math.PI / 2,
-      // 방향 반전 여부
-      reverse: true,
-      // 그래프 수치
-      value: 0,
-      // 그래프 사이즈
-      size: 150,
-      // 그래프 모서리, 지울 시 각진 모양
-      lineCap: "round",
-      // 그래프 두께
-      thickness: 20,
-      // 그래프 색상
-      fill: {
-        gradient: ["red", "orange"]
-      }
-    })
-
-    // 그래프 수치 출력
-    .on("circle-animation-progress", function (event, progress, stepValue) {
-      $(this)
-        .find(".percent")
-        .text(parseInt(stepValue * 100) + "%");
-    });
 }
 
 
@@ -236,7 +233,7 @@ function SliderBox3__init() {
     breakpoints: {
 
       // 화면의 넓이 >= 480px
-      4768: {
+      768: {
         slidesPerView: 1,
       },
       // 화면의 넓이 >= 640px
