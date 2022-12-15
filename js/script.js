@@ -69,7 +69,7 @@
     // 기본 애니메이션
     particles: {
       color: {
-        value: ["#FDFFBC", "#FFEEBB", "#FFDCB8", "#F7FD04"],
+        value: ["#FDFFBC", "#fbed96", "#FFDCB8", "#F7FD04"],
       },
       shape: {
         type: ["circle", "star"] // heart, star도 가능
@@ -127,17 +127,24 @@ let chart1Rendered = false;
 $("#fullpage").fullpage({
   
     menu: ".line",
+    
     afterLoad: function(ignored, destination){
       // 애니메이션이 재생되길 원하는 data anchor의 위치 입력
       if ( destination.anchor == 'section-2' ) {
         if ( chart1AllowRerender ) {
           // circle 차트 클래스명 확인 및 변경을 원하는 수치 입력
           $(".circle").circleProgress({value: 0.9});
+          $(".circle-2").circleProgress({value: 0.7});
+          $(".circle-3").circleProgress({value: 0.9});
+          $(".circle-4").circleProgress({value: 0.7});
         }
         else {
           if ( chart1Rendered == false ) {
             // circle 차트 클래스명 확인 및 변경을 원하는 수치 입력
             $(".circle").circleProgress({value: 0.9});
+            $(".circle-2").circleProgress({value: 0.7});
+            $(".circle-3").circleProgress({value: 0.9});
+            $(".circle-4").circleProgress({value: 0.7});
             chart1Rendered = true;
           }
         }
@@ -146,6 +153,9 @@ $("#fullpage").fullpage({
         if ( chart1AllowRerender ) {
           // circle 차트 클래스명 확인
           $(".circle").circleProgress({value: 0});
+          $(".circle-2").circleProgress({value: 0});
+          $(".circle-3").circleProgress({value: 0});
+          $(".circle-4").circleProgress({value: 0});
         }
       }
     },
@@ -172,7 +182,35 @@ $(".circle")
     thickness: 20,
     // 그래프 색상
     fill: {
-      gradient: ["red", "orange"]
+      gradient: ["#a8edea", "#f9d423"]
+    }
+  })
+
+    // 그래프 수치 출력
+    .on("circle-animation-progress", function (event, progress, stepValue) {
+      $(this)
+        .find(".percent")
+        .text(parseInt(stepValue * 100) + "%");
+    });
+
+  $(".circle-2")
+  .circleProgress({
+    // 그래프 시작 위치
+    // Math.PI = 3.14
+    startAngle: -Math.PI / 2,
+    // 방향 반전 여부
+    reverse: true,
+    // 그래프 수치
+    value: 0,
+    // 그래프 사이즈
+    size: 150,
+    // 그래프 모서리, 지울 시 각진 모양
+    lineCap: "round",
+    // 그래프 두께
+    thickness: 20,
+    // 그래프 색상
+    fill: {
+      gradient: ["#a8edea", "#f9d423"]
     }
   })
 
@@ -183,6 +221,62 @@ $(".circle")
       .text(parseInt(stepValue * 100) + "%");
   });
 
+  $(".circle-3")
+  .circleProgress({
+    // 그래프 시작 위치
+    // Math.PI = 3.14
+    startAngle: -Math.PI / 2,
+    // 방향 반전 여부
+    reverse: true,
+    // 그래프 수치
+    value: 0,
+    // 그래프 사이즈
+    size: 150,
+    // 그래프 모서리, 지울 시 각진 모양
+    lineCap: "round",
+    // 그래프 두께
+    thickness: 20,
+    // 그래프 색상
+    fill: {
+      gradient: ["#a8edea", "#f9d423"]
+    }
+  })
+
+  // 그래프 수치 출력
+  .on("circle-animation-progress", function (event, progress, stepValue) {
+    $(this)
+      .find(".percent")
+      .text(parseInt(stepValue * 100) + "%");
+  });
+
+
+  $(".circle-4")
+  .circleProgress({
+    // 그래프 시작 위치
+    // Math.PI = 3.14
+    startAngle: -Math.PI / 2,
+    // 방향 반전 여부
+    reverse: true,
+    // 그래프 수치
+    value: 0,
+    // 그래프 사이즈
+    size: 150,
+    // 그래프 모서리, 지울 시 각진 모양
+    lineCap: "round",
+    // 그래프 두께
+    thickness: 20,
+    // 그래프 색상
+    fill: {
+      gradient: ["#a8edea", "#f9d423"]
+    }
+  })
+
+  // 그래프 수치 출력
+  .on("circle-animation-progress", function (event, progress, stepValue) {
+    $(this)
+      .find(".percent")
+      .text(parseInt(stepValue * 100) + "%");
+  });
 }
 
 
