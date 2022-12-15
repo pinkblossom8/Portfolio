@@ -818,3 +818,36 @@ header .logo>img:nth-child(2) {
   font-weight: 600;
   margin-top:24px;
 }
+
+/* 이메일 입력 폼 */
+
+/* input 노멀라이즈 */
+input {
+  border:none;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+/* textarea의 사이즈 조절 가능 여부 */
+textarea {
+  resize: none;
+}
+
+.page-6 .mail-form {
+  text-align: center;
+}
+
+.page-6 .mail-form label {
+  display: block;
+}
+
+.page-6 .mail-form input {
+  width:50vw;
+  height: 48px;
+  border: 1px solid #008D99;
+  border-radius: 20px;
+  font-size: 1.6rem;
+}

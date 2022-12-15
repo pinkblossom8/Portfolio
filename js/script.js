@@ -341,6 +341,27 @@ function SliderBox3__init() {
   });
 }
 
+function sendEmailForm(form) {
+  if ( form.email.value.length == 0 ) {
+    alert('이메일 주소를 입력해주세요.');
+    form.email.focus();
+    return;
+  }
+  
+  if ( form.message.value.length == 0 ) {
+    alert('메세지를 입력해주세요.');
+    form.message.focus();
+    return;
+  }
+  
+  form.submit();
+  
+  form.email.value = '';
+  form.message.value = '';
+  form.submit.innerHTML = '전송되었습니다.';
+  form.submit.disabled = true;
+}
+
 
 
 Particles__init();
