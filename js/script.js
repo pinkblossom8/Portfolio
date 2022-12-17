@@ -341,6 +341,7 @@ function SliderBox3__init() {
   });
 }
 
+
 function sendEmailForm(form) {
   if ( form.email.value.length == 0 ) {
     alert('이메일 주소를 입력해주세요.');
@@ -369,3 +370,4 @@ Chart__init();
 SliderBox1__init();
 SliderBox2__init();
 SliderBox3__init();
+

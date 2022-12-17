@@ -111,6 +111,11 @@ html {
   top: 500px;
 }
 
+@media (max-width:768px) {
+  .line {
+    display: none;
+  }
+}
 
 /* section */
 
@@ -801,6 +806,13 @@ header .logo>img:nth-child(2) {
   }
 }
 
+@media (max-width: 769px) {
+  .icon-box {
+    display: none;
+  }
+}
+
+
 #fullpage .page-6 .text-box {
   margin-top:80px;
 }
@@ -813,10 +825,19 @@ header .logo>img:nth-child(2) {
   color:#242426;
 }
 
+#fullpage .page-6 .text-box > span:nth-child(3) {
+  margin-top:24px;
+}
+
 #fullpage .page-6 .text-box > span:last-child {
+  margin-top:4px;
+}
+
+#fullpage .page-6 .text-box > span:last-child,
+#fullpage .page-6 .text-box > span:nth-child(3) {
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
-  margin-top:24px;
+  font-size: 1.6rem;
 }
 
 /* 이메일 입력 폼 */
@@ -831,11 +852,6 @@ textarea:focus {
   outline: none;
 }
 
-/* textarea의 사이즈 조절 가능 여부 */
-textarea {
-  resize: none;
-}
-
 .page-6 .mail-form {
   text-align: center;
 }
@@ -845,9 +861,49 @@ textarea {
 }
 
 .page-6 .mail-form input {
+  max-width: 700px;
   width:50vw;
   height: 48px;
   border: 1px solid #008D99;
   border-radius: 20px;
   font-size: 1.6rem;
+  margin-top: 24px;
+  padding: 0 20px;
+}
+
+.page-6 .mail-form textarea {
+  max-width:700px;
+  width:50vw;
+  height: 260px;
+  border: 1px solid #008D99;
+  border-radius: 20px;
+  margin-top: 24px;
+  padding:20px;
+  font-family: inherit;
+  font-size: 1.6rem;
+  color:#888888;
+  /* textarea의 사이즈 조절 가능 여부 */
+  resize: none;
+}
+
+.page-6 .mail-form button {
+  width:122px;
+  height: 56px;
+  border:1px solid #008D99;
+  border-radius: 20px;
+  background-color: transparent;
+  font-size: 2rem;
+  font-weight: 900;
+  color:#008D99;
+  margin-top:24px;
+  box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.3);
+}
+
+.page-6 .mail-form button:hover {
+  background-color: #008D99;
+  color:white;
+}
+
+.page-6 .mail-form button > img {
+  border:2px solid red;
 }

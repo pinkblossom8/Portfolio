@@ -22,6 +22,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.css">
 
+
+  <!-- 폰트어썸 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
   <link rel="stylesheet" href="./css/style.css">
   <script src="./js/script.js" defer></script>
   <title>Document</title>
@@ -364,17 +368,21 @@
           <div class="text-box">
             <span>연락을 원하신다면 여기로 연락주세요!</span>
             <span>감사합니다.</span>
-            <span>samail0312@hanmail.net</span>
+            <span>Phone: 010-6284-2506</span>
+            <span>E-mail: samail0312@hanmail.net</span>
           </div>
           <div class="mail-form">
-            <form onsubmit="sendEmailForm(this); return false;" action="https://formspree.io/f/..." method="POST">
+            <form onsubmit="sendEmailForm(this); return false;" action="https://formspree.io/f/mvonpgje" method="POST">
               <label>
-                <input type="email" name="email" placeholder="회신을 원하는 이메일을 입력">
+                <input type="email" name="email" placeholder="회신을 원하는 이메일을 입력해주세요.">
               </label>
               <label>
-                <textarea name="message"></textarea>
+                <textarea name="message" placeholder="내용을 입력해주세요."></textarea>
               </label>
-              <button type="submit">Send</button>
+              <button type="submit">
+                <span>보내기</span> 
+                <i class="fa-regular fa-face-smile"></i>
+              </button>
             </form>
           </div>
         </section>
