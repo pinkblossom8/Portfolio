@@ -210,9 +210,6 @@ header .logo>img:nth-child(2) {
 
 /* 마우스 애니메이션 */
 
-#mouse-scroll {
-  style: block;
-}
 
 #mouse-scroll {
   position: fixed;
@@ -349,11 +346,6 @@ header .logo>img:nth-child(2) {
 @media (max-width:768px) {
   #fullpage .profile-box {
     display: flex;
-  }
-}
-
-@media (max-width:580px) {
-  #fullpage .profile-box {
   }
 }
 
