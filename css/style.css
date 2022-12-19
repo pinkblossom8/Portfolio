@@ -168,8 +168,7 @@ header .logo>img:nth-child(2) {
 
 /* section-1 시작 */
 #fullpage .page-1 .bg {
-  border:2px solid red;
-  background: url(/img/background-img.png) no-repeat center center;
+  background: url(../img/background-img.png) no-repeat center center;
   width:100vw;
   height: 100vh;
   position: absolute;
