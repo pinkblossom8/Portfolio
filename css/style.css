@@ -167,6 +167,13 @@ header .logo>img:nth-child(2) {
 }
 
 /* section-1 시작 */
+#fullpage .page-1 .bg {
+  background: url(../img/background-img.png) no-repeat center center;
+  border:3px solid red;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+}
 
 #fullpage>.page-1>div {
   display: flex;
