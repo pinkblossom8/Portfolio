@@ -20,10 +20,10 @@
       // color: "#000",
 
       // 이미지
-      image: "url('../img/background-img.png')",
-      size: "cover",
-      position: "50% 50%",
-      repeat: "no-repeat"
+      // image: "url('../img/background-img.png')",
+      // size: "cover",
+      // position: "50% 50%",
+      // repeat: "no-repeat"
     },
 
     // 배경 마스크 여부
