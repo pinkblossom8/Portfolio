@@ -329,7 +329,8 @@ header .logo>img:nth-child(2) {
 
 @media (max-width:480px) {
   #fullpage .sub-title {
-    margin-top:2vh;
+    margin-top:24px;
+    border:1px solid blue;
   }
 }
 
@@ -746,6 +747,13 @@ header .logo>img:nth-child(2) {
 
 .slider-box-3 .swiper {
   height: 648px;
+}
+
+@media (max-width:480px) {
+  .page-5 .slider-box-3 .swiper {
+    height: 56vh;
+    border:2px solid red;
+  }
 }
 
 .slider-box-3 .slide__item-box {
