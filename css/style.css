@@ -222,10 +222,10 @@ header .logo>img:nth-child(2) {
 
 
 #mouse-scroll {
-  position: fixed;
+  position: absolute;
   margin: auto;
   left: 50%;
-  top: 760px;
+  bottom:10vh;
   -webkit-transform: translateX(-50%);
   z-index: 9999;
 }
@@ -325,6 +325,12 @@ header .logo>img:nth-child(2) {
   text-align: center;
 }
 
+@media (max-width:481px) {
+  #fullpage .sub-title {
+    margin-top:4vh;
+  }
+}
+
 #fullpage .page-2 .comment-box {
   /* border: 3px solid red; */
   display: flex;
@@ -346,6 +352,13 @@ header .logo>img:nth-child(2) {
 .page-2 .comment .half-highlight {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #F2ECBB 50%);
   display: inline-block;
+}
+
+@media (max-width:768px) {
+  #fullpage .page-2 .comment-box {
+    border:2px solid red;
+    display: none;
+  }
 }
 
 #fullpage .profile-box {
