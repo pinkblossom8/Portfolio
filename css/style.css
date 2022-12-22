@@ -327,7 +327,7 @@ header .logo>img:nth-child(2) {
 
 /* 여기 */
 
-@media (max-width:481px) {
+@media (max-height:481px) {
   #fullpage .sub-title {
     margin-top:4vh;
   }
@@ -569,10 +569,10 @@ header .logo>img:nth-child(2) {
   border: 8px solid #008D99;
 }
 
-@media (max-width:786px) {
+@media (max-width:481px) {
   .page-3 .slider-box-1 .swiper {
-    min-height: 480px;
-    height: 60vh;
+    min-height: 400px;
+    height: 20vh;
   }
 }
 
@@ -668,7 +668,6 @@ header .logo>img:nth-child(2) {
 }
 
 @media (max-width: 1201px) {
-
   .slider-box-1,
   .slider-box-2,
   .slider-box-3 {
@@ -701,6 +700,7 @@ header .logo>img:nth-child(2) {
 }
 
 @media (max-width: 768px) {
+  .slider-box-1 .swiper-slide>div:nth-child(2),
   .slider-box-2 .swiper-slide>div:nth-child(2) {
     width: 64vw;
   }
@@ -730,6 +730,14 @@ header .logo>img:nth-child(2) {
 .slider-box-1 .swiper-button-next:hover>img:last-child,
 .slider-box-2 .swiper-button-next:hover>img:last-child {
   opacity: 1;
+}
+
+@media (max-width:480px) {
+  .slider-box-1 .swiper-button-next>img ,
+  .slider-box-2 .swiper-button-next>img {
+    border:2px solid red;
+    display: none;
+  }
 }
 
 /* section-5 시작 */
