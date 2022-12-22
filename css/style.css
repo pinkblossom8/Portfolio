@@ -327,9 +327,9 @@ header .logo>img:nth-child(2) {
 
 /* 여기 */
 
-@media (max-height:481px) {
+@media (max-height:480px) {
   #fullpage .sub-title {
-    margin-top:4vh;
+    margin-top:20px;
   }
 }
 
@@ -517,13 +517,6 @@ header .logo>img:nth-child(2) {
   }
 }
 
-@media (max-width:768px) {
-  #fullpage .page-2 .btn-move {
-    bottom:0vh;
-    /* border:2px solid red; */
-  }
-}
-
 .btn-move a:last-child {
   position: absolute;
   top: 0;
@@ -569,9 +562,10 @@ header .logo>img:nth-child(2) {
   border: 8px solid #008D99;
 }
 
-@media (max-width:481px) {
-  .page-3 .slider-box-1 .swiper {
-    min-height: 400px;
+@media (max-width:480px) {
+  .page-3 .slider-box-1 .swiper,
+  .page-4 .slider-box-2 .swiper {
+    min-height: 440px;
     height: 20vh;
   }
 }
