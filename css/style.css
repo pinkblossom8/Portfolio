@@ -501,13 +501,15 @@ header .logo>img:nth-child(2) {
 }
 
 .btn-move {
-  border:3px solid yellow;
+  /* border:3px solid yellow; */
   max-width: 1200px;
   margin: 0 auto;
   text-align: right;
   margin-top: 32px;
   position: relative;
 }
+
+/* 여기 */
 
 @media (max-width:1201px) {
   #fullpage .btn-move {
@@ -518,7 +520,7 @@ header .logo>img:nth-child(2) {
 @media (max-width:768px) {
   #fullpage .page-2 .btn-move {
     bottom:0vh;
-    border:2px solid red;
+    /* border:2px solid red; */
   }
 }
 
@@ -565,6 +567,13 @@ header .logo>img:nth-child(2) {
   max-width: 1200px;
   height: 600px;
   border: 8px solid #008D99;
+}
+
+@media (max-width:786px) {
+  .page-3 .slider-box-1 .swiper {
+    min-height: 480px;
+    height: 60vh;
+  }
 }
 
 .slider-box-1 .swiper .swiper-slide,
