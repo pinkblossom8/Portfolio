@@ -942,3 +942,20 @@ textarea:focus {
 .page-6 .mail-form button > img {
   border:2px solid red;
 }
+
+.page-6 #btnGoTop {
+  border:1px solid #008D99;
+  background-color:#fff;
+  padding: 12px;
+  border-radius: 999px;
+  color:#008D99;
+  position: fixed;
+  bottom:40px;
+  right: 20vw;
+  font-weight: 600;
+}
+
+.page-6 #btnGoTop:hover {
+  color:#fff;
+  background-color: #008D99;
+}

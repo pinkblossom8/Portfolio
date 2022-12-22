@@ -363,6 +363,10 @@ function sendEmailForm(form) {
   form.submit.disabled = true;
 }
 
+$('#btnGoTop').click(function () {
+  //$.fn.fullpage.setScrollingSpeed(0); 효과를 없애고싶을때
+  $.fn.fullpage.moveTo(1, 1); // 이동하고싶은 페이지
+});
 
 
 Particles__init();
