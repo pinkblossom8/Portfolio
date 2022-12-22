@@ -327,9 +327,9 @@ header .logo>img:nth-child(2) {
 
 /* 여기 */
 
-@media (max-height:480px) {
+@media (max-width:480px) {
   #fullpage .sub-title {
-    margin-top:20px;
+    margin-top:2vh;
   }
 }
 
@@ -565,8 +565,7 @@ header .logo>img:nth-child(2) {
 @media (max-width:480px) {
   .page-3 .slider-box-1 .swiper,
   .page-4 .slider-box-2 .swiper {
-    min-height: 440px;
-    height: 20vh;
+    height: 50vh;
   }
 }
 
