@@ -329,7 +329,7 @@ header .logo>img:nth-child(2) {
 
 @media (max-width:480px) {
   #fullpage .sub-title {
-    margin-top:24px;
+    margin-top:4px;
     border:1px solid blue;
   }
 }
@@ -693,6 +693,15 @@ header .logo>img:nth-child(2) {
   }
 }
 
+@media (max-width: 480px) {
+
+  .slider-box-1 .hidden-title,
+  .slider-box-2 .hidden-title {
+    font-size: 2.4rem;
+    border:1px solid pink;
+  }
+}
+
 @media (max-width: 768px) {
   .slider-box-1 .swiper-slide>div:nth-child(2),
   .slider-box-2 .swiper-slide>div:nth-child(2) {
@@ -729,7 +738,6 @@ header .logo>img:nth-child(2) {
 @media (max-width:480px) {
   .slider-box-1 .swiper-button-next>img ,
   .slider-box-2 .swiper-button-next>img {
-    border:2px solid red;
     display: none;
   }
 }
@@ -751,8 +759,8 @@ header .logo>img:nth-child(2) {
 
 @media (max-width:480px) {
   .page-5 .slider-box-3 .swiper {
-    height: 56vh;
-    border:2px solid red;
+    height: 60vh;
+    border:2px solid green;
   }
 }
 
@@ -953,6 +961,12 @@ textarea:focus {
   color:#888888;
   /* textarea의 사이즈 조절 가능 여부 */
   resize: none;
+}
+
+@media (max-width:480px) {
+  .page-6 .mail-form textarea {
+    height: 10vh;
+  }
 }
 
 .page-6 .mail-form button {
