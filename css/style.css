@@ -325,6 +325,8 @@ header .logo>img:nth-child(2) {
   text-align: center;
 }
 
+/* 여기 */
+
 @media (max-width:481px) {
   #fullpage .sub-title {
     margin-top:4vh;
@@ -499,7 +501,7 @@ header .logo>img:nth-child(2) {
 }
 
 .btn-move {
-  /* border:3px solid yellow; */
+  border:3px solid yellow;
   max-width: 1200px;
   margin: 0 auto;
   text-align: right;
@@ -507,15 +509,16 @@ header .logo>img:nth-child(2) {
   position: relative;
 }
 
-@media (max-width:768px) {
-  #fullpage .page-2 .btn-move {
-    margin-top: 20vw;
-  }
-}
-
 @media (max-width:1201px) {
   #fullpage .btn-move {
     margin-right: 24px;
+  }
+}
+
+@media (max-width:768px) {
+  #fullpage .page-2 .btn-move {
+    bottom:0vh;
+    border:2px solid red;
   }
 }
 
