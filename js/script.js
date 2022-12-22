@@ -77,7 +77,7 @@
 
       // 개수
       number: {
-        value: 40,
+        value: 50,
         // 밀도
         density: {
           enable: true,
