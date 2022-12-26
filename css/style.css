@@ -329,7 +329,8 @@ header .logo>img:nth-child(2) {
 
 @media (max-width:480px) {
   #fullpage .sub-title {
-    margin-top:4px;
+    /* margin-top:4px; */
+    border:2px solid red;
   }
 }
 
