@@ -166,6 +166,7 @@ header .logo>img:nth-child(2) {
   opacity: 1;
 }
 
+
 /* section-1 시작 */
 #fullpage .page-1 .bg > img {
   width:100%;
@@ -316,23 +317,28 @@ header .logo>img:nth-child(2) {
 
 #fullpage .page-2 {
   background: url(../img/bg-page2.png) no-repeat center center;
-  display: flex;
+}
+
+/* 여기 */
+@media (max-width:480px) {
+  #fullpage>.page-2>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 #fullpage .sub-title {
   /* border: 3px solid blue; */
-  margin-top: 80px;
+  margin-top: 40px;
   text-align: center;
 }
 
-/* 여기 */
-
-@media (max-width:480px) {
-  #fullpage .sub-title {
-    /* margin-top:4px; */
-    border:2px solid red;
-  }
+#fullpage .page-5 .sub-title,
+#fullpage .page-6 .sub-title {
+  margin-top:20px;
 }
+
 
 #fullpage .page-2 .comment-box {
   /* border: 3px solid red; */
@@ -531,10 +537,11 @@ header .logo>img:nth-child(2) {
 }
 
 /* section-3,4 시작 */
+/* 여기 */
 
 #fullpage .page-3,
 #fullpage .page-4 {
-  display: flex;
+  /* display: flex; */
 }
 
 #fullpage .portfolio__title {
@@ -707,6 +714,7 @@ header .logo>img:nth-child(2) {
   }
 }
 
+
 /* slide__next-btn 커스텀 */
 
 .slider-box-1 .swiper-button-next::after,
@@ -743,7 +751,7 @@ header .logo>img:nth-child(2) {
 /* section-5 시작 */
 
 #fullpage .page-5 {
-  display: flex;
+  /* display: flex; */
   background: url(../img/bg-page5.png) no-repeat center center;
 }
 
@@ -841,7 +849,7 @@ header .logo>img:nth-child(2) {
 /* section-6 시작 */
 
 #fullpage .page-6 {
-  display: flex;
+  /* display: flex; */
   position: relative;
   background: url(../img/background-img.png) no-repeat center center;
 }
