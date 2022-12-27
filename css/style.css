@@ -783,17 +783,15 @@ header .logo>img:nth-child(2) {
 
 @media (max-width:480px) {
   .page-5 .slider-box-3 .swiper {
-    max-height: 60vh;
+    max-height: 62vh;
   }
 }
 
 .slider-box-3 .slide__item-box {
-  /* border:3px solid blue; */
   text-align: center;
 }
 
 .slider-box-3 .title-clonecoding {
-  /* border:3px solid red; */
   font-family: 'Cafe24Shiningstar';
   font-size: 3.2rem;
   color: #008D99;
@@ -801,7 +799,6 @@ header .logo>img:nth-child(2) {
 }
 
 .slider-box-3 .slide__item-box .img-box {
-  /* border:2px solid green; */
   position: relative;
   max-width:520px;
   margin:0 auto;
@@ -873,8 +870,7 @@ header .logo>img:nth-child(2) {
 
 @media (max-width:480px) {
   .slider-box-3 .swiper-pagination-bullets.swiper-pagination-horizontal {
-    border:2px solid red;
-    bottom:1vh;
+    bottom:0.25vh;
   }
 }
 
