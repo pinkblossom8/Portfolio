@@ -352,7 +352,6 @@ header .logo>img:nth-child(2) {
 }
 
 #fullpage .page-2 .comment-box {
-  /* border: 3px solid red; */
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -360,7 +359,6 @@ header .logo>img:nth-child(2) {
 }
 
 #fullpage .page-2 .comment>span {
-  /* border:3px solid green; */
   display: block;
   margin-left: 24px;
   font-family: 'Cafe24Shiningstar';
@@ -376,13 +374,11 @@ header .logo>img:nth-child(2) {
 
 @media (max-width:768px) {
   #fullpage .page-2 .comment-box {
-    border:2px solid red;
     display: none;
   }
 }
 
 #fullpage .profile-box {
-  /* border:3px solid blue; */
   margin-top: 20px;
 }
 
@@ -394,7 +390,6 @@ header .logo>img:nth-child(2) {
 
 
 #fullpage .profile-box .item-1 {
-  /* border:3px solid red; */
   display: flex;
   justify-content: space-between;
 }
@@ -460,7 +455,6 @@ header .logo>img:nth-child(2) {
 }
 
 .item-1 .certify .list-2022>span {
-  /* border:3px solid pink; */
   display: block;
   font-family: 'Cafe24Shiningstar';
   font-size: 2.8rem;
@@ -469,7 +463,6 @@ header .logo>img:nth-child(2) {
 
 .page-2 .item-2 .skill {
   text-align: center;
-  /* border: 3px solid pink; */
 }
 
 .page-2 .item-2 .chart>div {
@@ -520,12 +513,17 @@ header .logo>img:nth-child(2) {
 }
 
 .btn-move {
-  /* border:3px solid yellow; */
   max-width: 1200px;
   margin: 0 auto;
   text-align: right;
   margin-top: 32px;
   position: relative;
+}
+
+@media (max-width:1200px) {
+  #fullpage .page-2 .btn-move {
+    margin-right: 0;
+  }
 }
 
 /* 여기 */
@@ -557,7 +555,6 @@ header .logo>img:nth-child(2) {
 }
 
 #fullpage .portfolio__title {
-  /* border:3px solid red; */
   width: 1200px;
   margin: 0 auto;
   margin-top: 40px;
