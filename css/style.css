@@ -871,6 +871,13 @@ header .logo>img:nth-child(2) {
   border: 1px solid #008D99;
 }
 
+@media (max-width:480px) {
+  .slider-box-3 .swiper-pagination-bullets.swiper-pagination-horizontal {
+    border:2px solid red;
+    bottom:1vh;
+  }
+}
+
 /* section-6 시작 */
 
 #fullpage .page-6 {
