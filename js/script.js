@@ -296,6 +296,12 @@ function SliderBox1__init() {
       prevEl: ".slider-box-1 .swiper-button-prev"
     }
   });
+
+  swiper.on("slideChange", function () {
+    console.log(swiper.realIndex);
+    $(".portfolio-link-list .link").removeClass("active");
+    $(".portfolio-link-list .link").eq(swiper.realIndex).addClass("active");
+  });
 }
 
 function SliderBox2__init() {

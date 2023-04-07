@@ -534,6 +534,37 @@ header .logo>img:nth-child(2) {
 }
 /* section-3,4 시작 */
 
+/* 스와이퍼 링크변경 */
+.link {
+  display:none;
+}
+
+.link.active {
+  display:block;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: right;
+  margin-top: 32px;
+  position: relative;
+}
+
+@media (max-width:1201px) {
+  #fullpage .link.active {
+    margin-right: 24px;
+  }
+
+}
+
+.link.active a:last-child {
+  border:2px solid red;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+
 #fullpage .page-3,
 #fullpage .page-4 {
   /* display: flex; */
