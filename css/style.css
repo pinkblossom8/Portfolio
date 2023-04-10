@@ -784,10 +784,15 @@ header .logo>img:nth-child(2) {
 }
 
 /* pagenation 커스텀 */
-.slider-box-1 .swiper-pagination,
-.slider-box-2 .swiper-pagination {
+.slider-box-1 .swiper-pagination {
   bottom: 50px;
   left: 55%;
+  width:auto;
+}
+
+.slider-box-2 .swiper-pagination {
+  bottom: 50px;
+  left: 58%;
   width:auto;
 }
 
