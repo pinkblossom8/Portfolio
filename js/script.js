@@ -287,7 +287,11 @@ function SliderBox1__init() {
 
     // If we need pagination
     pagination: {
-      el: ".slider-box-1 .swiper-pagination"
+      el: ".slider-box-1 .swiper-pagination",
+      clickable: true,
+            renderBullet: function (index, className) {
+                return '<span class="' + className + '">' + (index + 1) + '</span>';
+            },
     },
 
     // Navigation arrows
