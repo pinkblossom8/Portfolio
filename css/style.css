@@ -534,61 +534,6 @@ header .logo>img:nth-child(2) {
 }
 /* section-3,4 시작 */
 
-/* 스와이퍼 링크변경 */
-.link {
-  display:none;
-}
-
-.link.active {
-  display:block;
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: right;
-  margin-top: 32px;
-  position: relative;
-}
-
-@media (max-width:1201px) {
-  #fullpage .link.active {
-    margin-right: 32px;
-  }
-}
-
-.link button {
-  /* width:138px; */
-  /* height: 48px; */
-  border:2px solid #008D99;
-  border-radius: 10px;
-  background-color:#fff;
-  font-family: 'Roboto', sans-serif;
-  color:#008D99;
-  font-weight: 900;
-  font-size: 16px;
-  cursor: pointer;
-  padding:12px;
-  margin-right: -8px;
-}
-
-.link button:hover {
-  background-color:#008D99;
-  color:#fff;
-}
-
-.link button span {
-  margin-right: 12px;
-}
-
-
-.link.active a:last-child {
-  border:2px solid red;
-  position: absolute;
-  top: 0;
-  right: 0;
-  opacity: 0;
-  transition: 0.3s;
-}
-
-
 #fullpage .page-3,
 #fullpage .page-4 {
   /* display: flex; */
@@ -610,7 +555,6 @@ header .logo>img:nth-child(2) {
 }
 
 /* slide 시작 */
-
 
 .page-3 .slider-box-1 .swiper,
 .page-4 .slider-box-2 .swiper {
@@ -762,6 +706,49 @@ header .logo>img:nth-child(2) {
   }
 }
 
+/* 스와이퍼 링크변경 */
+.link {
+  display:none;
+}
+
+.link.active {
+  display:block;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: right;
+  margin-top: 32px;
+  position: relative;
+}
+
+@media (max-width:1201px) {
+  #fullpage .link.active {
+    margin-right: 32px;
+  }
+}
+
+.link a {
+  /* width:138px; */
+  /* height: 48px; */
+  border:2px solid #008D99;
+  border-radius: 10px;
+  background-color:#fff;
+  font-family: 'Roboto', sans-serif;
+  color:#008D99;
+  font-weight: 900;
+  font-size: 16px;
+  cursor: pointer;
+  padding:12px;
+  margin-right: -8px;
+}
+
+.link a:hover {
+  background-color:#008D99;
+  color:#fff;
+}
+
+.link a i {
+  margin-left: 12px;
+}
 
 /* slide__next-btn 커스텀 */
 
@@ -797,13 +784,15 @@ header .logo>img:nth-child(2) {
 }
 
 /* pagenation 커스텀 */
-.slider-box-1 .swiper-pagination {
+.slider-box-1 .swiper-pagination,
+.slider-box-2 .swiper-pagination {
   bottom: 50px;
   left: 60%;
   width:auto;
 }
 
-.slider-box-1 .swiper-pagination-bullet {
+.slider-box-1 .swiper-pagination-bullet,
+.slider-box-2 .swiper-pagination-bullet {
   width:20px;
   height: 20px;
   font-weight: 300;
