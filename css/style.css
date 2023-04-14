@@ -151,6 +151,7 @@ header .logo>img:nth-child(2) {
   left: 0;
 }
 
+
 /* 로고 색상 페이지 변경 */
 .fp-viewing-section-1 header .logo>img:first-child,
 .fp-viewing-section-6 header .logo>img:first-child {
@@ -211,6 +212,37 @@ header .logo>img:nth-child(2) {
   .remark {
     display: none;
   }
+}
+
+.page-1 .info {
+  border: 1px solid #242426;
+  border-radius: 99px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  margin-top:18px;
+  margin-right: 32px;
+  top:0;
+  right: 0;
+  padding:4px;
+  cursor: pointer;
+}
+
+.page-1 .light {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-1 .info > span {
+  display: none;
+  font-family: 'Cafe24Shiningstar';
+  font-size: 2.4rem;
+  margin-left: 8px;
+  color:#242426;
+}
+
+.page-1 .info:hover > span {
+  display: block;
 }
 
 /* 마우스 애니메이션 */
