@@ -328,6 +328,12 @@ function SliderBox2__init() {
       prevEl: ".slider-box-2 .swiper-button-prev"
     }
   });
+
+  swiper.on("slideChange", function () {
+    console.log(swiper.realIndex);
+    $(".portfolio-link-list .link1").removeClass("active");
+    $(".portfolio-link-list .link1").eq(swiper.realIndex).addClass("active");
+  });
 }
 
 function SliderBox3__init() {

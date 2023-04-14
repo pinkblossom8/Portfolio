@@ -228,11 +228,6 @@ header .logo>img:nth-child(2) {
   cursor: pointer;
 }
 
-.page-1 .light {
-  max-width: 100%;
-  height: auto;
-}
-
 .page-1 .info > span {
   display: none;
   font-family: 'Cafe24Shiningstar';
@@ -541,7 +536,7 @@ header .logo>img:nth-child(2) {
 
 @media (max-width:1200px) {
   #fullpage .page-2 .btn-move {
-    margin-right: 0;
+    margin-right: 24px;
   }
 }
 
@@ -741,10 +736,14 @@ header .logo>img:nth-child(2) {
 /* 스와이퍼 링크변경 */
 
 .portfolio-link-list {
-  z-index: 999;
+  /* z-index: 999; */
 }
 
 .link {
+  display:none;
+}
+
+.link1 {
   display:none;
 }
 
@@ -757,8 +756,23 @@ header .logo>img:nth-child(2) {
   position: relative;
 }
 
+.link1.active {
+  display:block;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: right;
+  margin-top: 32px;
+  position: relative;
+}
+
 @media (max-width:1201px) {
   #fullpage .link.active {
+    margin-right: 32px;
+  }
+}
+
+@media (max-width:1201px) {
+  #fullpage .link1.active {
     margin-right: 32px;
   }
 }
@@ -778,12 +792,36 @@ header .logo>img:nth-child(2) {
   margin-right: -8px;
 }
 
+.link1 a {
+  /* width:138px; */
+  /* height: 48px; */
+  border:2px solid #008D99;
+  border-radius: 10px;
+  background-color:#fff;
+  font-family: 'Roboto', sans-serif;
+  color:#008D99;
+  font-weight: 900;
+  font-size: 16px;
+  cursor: pointer;
+  padding:12px;
+  margin-right: -8px;
+}
+
 .link a:hover {
   background-color:#008D99;
   color:#fff;
 }
 
+.link1 a:hover {
+  background-color:#008D99;
+  color:#fff;
+}
+
 .link a i {
+  margin-left: 12px;
+}
+
+.link1 a i {
   margin-left: 12px;
 }
 
@@ -846,6 +884,7 @@ header .logo>img:nth-child(2) {
   border-radius: 0;
   font-family: 'Cafe24Shiningstar';
 }
+
 
 /* section-5 시작 */
 
