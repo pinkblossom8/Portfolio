@@ -609,6 +609,7 @@ header .logo>img:nth-child(2) {
   margin: 1vw;
 }
 
+
 .slider-box-1 .swiper .slide__item:nth-child(2)>img,
 .slider-box-2 .swiper .slide__item:nth-child(2)>img {
   max-width: 100%;
